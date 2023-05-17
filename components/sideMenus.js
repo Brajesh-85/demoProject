@@ -3,8 +3,6 @@ import React from "react";
 const SideMenus = () => {
         return (
             <>
-    <div class="container-fluid">
-    <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-0 leftMenuBg">
             <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100">
                 <div className="leftMenuTopParent">
@@ -142,24 +140,8 @@ const SideMenus = () => {
   </div>
   
 </div>
-               
-  
  </div>
 </div>
-
-
-        <div class="col py-3">
-            <h3>Left Sidebar with Submenus</h3>
-            <p class="lead">
-                An example 2-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single 
-                menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink in width on smaller screens.</p>
-            <ul class="list-unstyled">
-                <li><h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile</li>
-            </ul>
-        </div>
-    </div>
-</div>
-            
             </>
         )
 }

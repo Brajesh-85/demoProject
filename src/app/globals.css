@@ -1,10 +1,39 @@
 
+body {
+	background: linear-gradient(-45deg, #fff4e6, #f8fcff, #ffebf6, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@font-face { 
+  font-family: 'CabinetGrotesk-Regular';
+  src: url('fonts/CabinetGrotesk-Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face { 
   font-family: 'CabinetGrotesk-Medium';
   src: url('fonts/CabinetGrotesk-Medium.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 .leftMenuBg {
   background: #020110;
@@ -228,6 +257,59 @@ opacity:0.5;
   color:#fff;
 }
 
+/* Top BreadCrumb Menu */
 
+.topBreadCrumbBarParent {
+  background: #020110;
+  height:65px;
+  padding:0 0 0 15px;
+  line-height:60px;
+  width:100%;
+  box-sizing: border-box;
+}
 
+.breadcrumb {
+  font-family: 'CabinetGrotesk-Regular';
+  font-size:15px!important;
+  
+}
+.breadcrumb a {
+  color:#9A999F;
+  text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color:#9A999F!important;
+}
+.breadcrumb a:hover {
+  color:#fff;
+}
 
+.previewCTA {
+  font-family: 'CabinetGrotesk-Regular';
+  color:#9A999F;
+  text-decoration:none;
+  font-size:16px;
+  float: right;
+}
+.previewCTA:hover {
+  color:#fff;
+}
+
+.nextCTA {
+  font-family: 'CabinetGrotesk-Regular';
+  color:#020110;
+  text-decoration: none;
+  font-size: 16px;
+  padding:0px 25px;
+  font-weight:bold;
+  position: relative;
+  top:14px;
+  border:none;
+  border-radius:20px;
+  line-height: 35px;
+  float: right;
+  background: linear-gradient(90deg, rgba(0,245,177,1) 0%, rgba(0,233,224,1) 100%);
+}
+.nextCTA:hover {
+  background: #fff;
+}
