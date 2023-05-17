@@ -144,10 +144,45 @@
   box-shadow:none!important;
 }
 
+.userMenuParent {
+  position: fixed;
+  bottom:0;
+  width:275px;
+  border-top:1px solid #00F5B1!important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed:before {
+  content:'';
+  display: inline-block;
+  background: url(icons/userIcon.svg);
+  width: 24px;
+  height:24px;
+  transform: scale(0.6);
+  right:0px;
+  bottom:auto;
+}
+.accordion-item:last-of-type .accordion-button.collapsed:after {
+  visibility: visible;
+  opacity:0.7;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(106%) contrast(101%);
+}
+
+.cstmblackBg {
+  background: #141321;
+}
+
+.cstmPadding {
+  position: relative;
+  right:8px;
+  width: 283px!important;
+}
+
+
 .sideMenuListItem {
   width:100%;
   display: inline-block;
 }
+
 .sideMenuListItem ul {
   padding:0;
   margin: 5px 0 0 0;
