@@ -54,8 +54,7 @@ body {
   background: url(icons/left-arrow.svg);
     width: 22px;
     height: 22px;
-    transform: scale(1.2);
-   
+    transform: scale(1.2);  
 }
 .leftMenuTopParent .ThreeDotMenu {
   background: url(icons/threebar-menu.svg);
@@ -75,7 +74,7 @@ body {
 .leftMenuTopParent .addDetails {
   font-size:18px; color:#fff;
   font-family:'CabinetGrotesk-Medium';
-  padding:0 0 0 10px;
+  padding:0 0 0 20px;
   width: 100%;
   text-align: left;
 }
@@ -284,12 +283,20 @@ opacity:0.5;
   color:#fff;
 }
 
+
+.topCTAParent {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
 .previewCTA {
   font-family: 'CabinetGrotesk-Regular';
   color:#9A999F;
   text-decoration:none;
   font-size:16px;
-  float: right;
+  margin:0 20px 0 0;
+  
 }
 .previewCTA:hover {
   color:#fff;
@@ -300,14 +307,12 @@ opacity:0.5;
   color:#020110;
   text-decoration: none;
   font-size: 16px;
-  padding:0px 25px;
+  padding:2px 25px 0 25px;
   font-weight:bold;
-  position: relative;
-  top:14px;
   border:none;
   border-radius:20px;
-  line-height: 35px;
-  float: right;
+  line-height: 32px;
+ 
   background: linear-gradient(90deg, rgba(0,245,177,1) 0%, rgba(0,233,224,1) 100%);
 }
 .nextCTA:hover {

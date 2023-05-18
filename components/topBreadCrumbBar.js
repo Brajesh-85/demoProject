@@ -15,9 +15,12 @@ const TopBreadCrumb   = () => {
 </nav>
                             </div>
 
+
 <div className="col-2">
-    <a href="#" className="previewCTA">Preview</a>
+    <div className="topCTAParent">
+<a href="#" className="previewCTA">Preview</a>
     <button className="nextCTA">Next</button>
+</div>
 </div>
 
 
