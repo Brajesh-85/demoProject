@@ -1,6 +1,7 @@
 import styles from './page.module.css'
 import SideBarMenu from '/components/sideMenus'
 import TopBreadCrumbBar from '/components/topBreadCrumbBar'
+import TableData from '/components/TableData'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <SideBarMenu/>
       <div class="col p-0">
             <TopBreadCrumbBar/>
+            <TableData/>
         </div> 
       </div>
 
