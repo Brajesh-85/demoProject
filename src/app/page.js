@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import SideBarMenu from '/components/sideMenus'
 import TopBreadCrumbBar from '/components/topBreadCrumbBar'
-import TableData from '/components/TableData'
+import TableData from '/components/tableData'
 
 export default function Home() {
   return (
