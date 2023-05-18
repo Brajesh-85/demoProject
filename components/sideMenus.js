@@ -24,7 +24,7 @@ const SideMenus = () => {
       <div class="accordion-body">
             <div className="sideMenuListItem">
                 <ul>
-                    <li><a href="#">Tech Product Design And </a></li>
+                    <li className="activeTab"><a href="#">Tech Product Design And </a></li>
                     <li><a href="#">Consultation </a></li>
                     <li><a href="#">IOS </a></li>
                     <li><a href="#">Android </a></li>

@@ -1,10 +1,11 @@
 import React from "react";
+import GSTTableData from '/components/GSTTable'
 
 const TableData = () => {
         return (
             <>
 
-<table class="table table-hover">
+<table class="table">
   <thead>
     <tr>
     <th scope="col"><input type='checkbox' className="checkboxRound" value='cookies'/></th>
@@ -128,6 +129,39 @@ const TableData = () => {
       <td>$15,000</td>
     </tr>
 
+    <tr style={{borderTop:"none", borderBottom:"none"}}>
+        <td colSpan="10" style={{lineHeight:"normal", padding:"0"}}>
+        <div className="addItemRow">
+               <div className='plusIcon'></div> Add Item
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td colSpan="10">
+        <div style={{margin:"250px 0 0 0"}}>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+    <td></td>
+      <td>
+      <div className="tableTdIconsParent">
+            <div className="dotsIcon"></div>
+            <div className="rowArrowIcon"></div>
+        </div>
+      </td>
+      <td>GST Tax</td>
+      <td><span class="textMandatory">Mandatory</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>18%</td>
+    </tr>
+           
   </tbody>
 </table>
             

@@ -72,6 +72,7 @@ body {
     filter: invert(94%) sepia(0%) saturate(7475%) hue-rotate(79deg) brightness(112%) contrast(105%);
     position: relative;
     right: 10px;
+   
 }
 .leftMenuTopParent .ThreeDotMenu:hover {
   opacity:0.9;
@@ -126,6 +127,7 @@ body {
   background-color:#141321!important;
   border-top-left-radius:0px!important;
   border-top-right-radius:0px!important;
+  
 }
 
 
@@ -146,6 +148,7 @@ body {
   margin-right:5px;
   opacity: 1;
   filter:none!important;
+  
 }
 
 .accordion-button:before {
@@ -164,26 +167,51 @@ body {
 
 .accordion-button:after {
     visibility: hidden;
+    transform: rotate(270deg) scale(0.7);
+    transition: 0.5s all ease 0s;
+    position: relative;
+ left:5px;
+    
 }
+.accordion-button:hover:after {
+  visibility: visible;
+  transform: rotate(270deg) scale(0.7);  
+  transition: 0.5s all ease 0s; 
+ position: relative;
+ left:10px;
+}
+
 .accordion-button:not(.collapsed):after {
   visibility: visible;
+  transform: scale(0.7)!important; 
+  left: 0; 
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-bottom-right-radius:0px!important;
   border-bottom-left-radius:0px!important;
+  filter: none!important;
 }
 
 .accordion-button:focus{
   box-shadow:none!important;
 }
 
-.accordion-item .accordion-button:hover{
-  color:#fff!important;
+.accordion-item .accordion-button{
+  transition: 1.5s all ease 0s;
 }
-
+.accordion-item .accordion-button:before{
+  transition: 1.5s all ease 0s;
+}
+.accordion-item .accordion-button:hover{
+  color:#141321!important;
+  transition: 1.5s all ease 0s;
+  background:#fff!important;
+}
 .accordion-item .accordion-button:hover:before{
   opacity: 1;
+  transition: 1.5s all ease 0s;
+  filter:none!important;
 }
 
 .userMenuParent {
@@ -206,8 +234,21 @@ body {
 .accordion-item:last-of-type .accordion-button.collapsed:after {
   visibility: visible;
   opacity:0.7;
+  transform: rotate(180deg) scale(0.7);
+  left:0;
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(106%) contrast(101%);
 }
+
+ .accordion-item:last-of-type .accordion-button.collapsed:hover:after{
+  filter:none!important;
+}
+
+/* .accordion-item:last-of-type .accordion-button:hover{
+  color:#9A999F!important;
+  background:#020110!important;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(106%) contrast(101%)!important;
+}  */
+
 
 .cstmblackBg {
   background: #141321;
@@ -239,6 +280,8 @@ body {
     width:100%;
     border-left:2px solid #020110;
     cursor: pointer;  
+    transition: 1.5s all ease 0s;
+    
 }
 .sideMenuListItem ul li:before {
   content: '';
@@ -250,6 +293,7 @@ filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(106%
 margin-right: 5px;
 transform: scale(0.8);
 opacity:0.5;
+transition: 1.5s all ease 0s;
 
 }
 .sideMenuListItem ul li a {
@@ -257,18 +301,34 @@ opacity:0.5;
   text-decoration: none;
   font-weight: 500;
   color:#9A999F;
+  transition: 1.5s all ease 0s;
   
 }
 .sideMenuListItem ul li:hover:before{
   opacity:1;
+  transition: 1.5s all ease 0s;
 }
 .sideMenuListItem ul li:hover {
   background:hsla(0,0%,100%,.07);
-  border-left:2px solid #00F5B1;
+  transition: 1.5s all ease 0s;
 }
 .sideMenuListItem ul li:hover a {
   color:#fff;
+  transition: 1.5s all ease 0s;
 }
+
+.sideMenuListItem ul li.activeTab {
+ border-left:2px solid #00F5B1;
+ opacity:1;
+ 
+}
+.sideMenuListItem ul li.activeTab a {
+  color:#fff;
+}
+.sideMenuListItem ul li.activeTab:before{
+  opacity:1;
+}
+
 
 /* Top BreadCrumb Menu */
 
@@ -337,7 +397,8 @@ opacity:0.5;
 
 table {
   font-family: 'Inter-Regular';
-  background: #fff;
+  background: #fefefea6;
+  margin-bottom: 0px!important;
 }
 
 table thead {
@@ -347,16 +408,22 @@ table thead {
 
 table tbody td {
   color:#67676f;
-  /* border-top:2px solid #a5a2a5; */
-  /* border-bottom:2px solid #a5a2a5; */
   font-size:14px;
   line-height:30px;
 }
+table tbody tr {
+  border-top:2px solid #dedede;
+  border-bottom:2px solid #dedede;
+  transition: 0.5s all ease 0s;
+  background: transparent!important;
+}
 
-/* table tr:hover {
-  border-top:2px solid #1ecb40;
-  border-bottom:2px solid #1ecb40;
-} */
+table tbody tr:hover {
+  border-bottom:2px solid #bfbab8;
+  border-top:2px solid #bfbab8;
+  background:#fff!important;
+  transition: 0.5s all ease 0s;
+}
 
 .tableRowIconsParent {
   display: flex;
@@ -408,8 +475,8 @@ table tbody td {
 .switch {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 15px;
+  width: 25px;
+  height: 13px;
   left:27px;
   top:7px;
 }
@@ -435,10 +502,10 @@ table tbody td {
 .slider:before {
   position: absolute;
   content: "";
-  height: 12px;
-  width: 12px;
-  left: 1px;
-  bottom: 2px;
+  height: 9px;
+  width: 9px;
+  left: 2.1px;
+  bottom: 2.1px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -453,9 +520,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(11px);
 }
 
 /* Rounded sliders */
@@ -469,14 +536,76 @@ input:checked + .slider:before {
 
 .textMandatory {
   color:#ff2944;
+  cursor:default;
+  position: relative;
+  padding-bottom: 3px;
 }
+.textMandatory:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #ff2944, #ff2944);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease-in;  
+  opacity: 0.5;
+}
+.textMandatory:hover:before{
+  background-size: 100% 1px;
+  opacity: 1;
+}
+
 
 .textRecommended {
   color:#228fec;
+  cursor:default;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.textRecommended:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #228fec, #228fec);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease-in;  
+  opacity: 0.5;
+}
+.textRecommended:hover:before{
+  background-size: 100% 1px;
+  opacity: 1;
 }
 
 .textAdditional {
   color:#00ac84;
+  cursor:default;
+  position: relative;
+  padding-bottom: 3px;
+}
+.textAdditional:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, #00ac84, #00ac84);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease-in;  
+  opacity: 0.5;
+}
+.textAdditional:hover:before{
+  background-size: 100% 1px;
+  opacity: 1;
 }
 
 input[type="checkbox"] {visibility: hidden; } 
@@ -485,18 +614,21 @@ input[type="checkbox"]:checked { visibility:visible; }
 
 input[type='checkbox']{
   box-shadow:none;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius:100%;
   position: relative;
   left:10px;
-  top:0px;
+  top:-2px;
+  
 }
 input[type='checkbox']:checked{
-  box-shadow:none;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius:100%;
+  background:#020110;
+  transition: 1.5s all ease 0s;
+ 
 }
 
 .checkboxRound {
@@ -510,4 +642,75 @@ input[type='checkbox']:checked{
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
+}
+
+.addItemRow {
+  display: flex;
+  color:#67676f;
+  background: transparent;
+  align-items: center;
+  transition: 1s all ease 0s;
+  font-size:15px;
+  line-height: 45px;
+  cursor: pointer;
+}
+.addItemRow .plusIcon{
+  background: #e3e3e3;
+  width:25px;
+  height:25px;
+  border-radius:100%;
+  margin:0 10px 0 30px;
+  
+}
+.addItemRow .plusIcon:before{
+  content:'+';
+  color:#5c5a5e;
+  position: relative;
+  bottom:11px;
+  left:6px;
+  font-size:20px;
+  font-weight:500;
+  transition: 1s all ease 0s;
+}
+.addItemRow:hover .plusIcon{
+  color:#020110;
+  background:#fff;
+  transition: 1s all ease 0s;
+}
+
+
+.addItemRow:hover {
+  background:#020110;
+  transition: 1s all ease 0s;
+  color:#fff;
+}
+
+.basePriceParent {
+  display: inline-block;
+  width:100%;
+  font-family: 'Inter-Regular';
+  background:#fff;
+ padding:0 0 20px 0;
+}
+
+.basePriceParent .basePrice {
+  color:#67676f;
+  font-size:14px;
+  text-align: left;
+  float: left;
+}
+
+.basePriceParent .basePrice .icons{
+  background: url(https://cdn9.momspresso.com/static/images/svg-icons/info.svg);
+  width:30px;
+  height:30px;
+  display: inline-block;
+  margin: 0 5px 0 25px;
+  transform: scale(0.5);
+  position: relative;
+  top:10px;
+}
+.basePriceParent .totalPrice {
+  font-size:15px;
+  float: right;
 }
