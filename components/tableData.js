@@ -27,14 +27,16 @@ const TableData = () => {
   </thead>
   <tbody>
     <tr>
-        <td><input type='checkbox' className="checkboxRound" value='cookies'/></td>
+        <td>
+          <input type='checkbox' className="checkboxRound" value='cookies'/>
+          </td>
     <td>
     <div className="tableTdIconsParent">
             <div className="dotsIcon"></div>
             <div className="rowArrowIcon"></div>
         </div>
         </td> 
-      <td>Consultation</td>
+      <td><p>Consultation</p></td>
       <td><span class="textMandatory">Mandatory</span></td>
       <td>1</td>
       <td>10,000</td>
@@ -56,7 +58,7 @@ const TableData = () => {
             <div className="rowArrowIcon"></div>
         </div>
     </td>
-      <td>Creating Brand Centric Design System</td>
+      <td><p>Creating Brand Centric Design System</p></td>
       <td><span class="textRecommended">Recommended</span></td>
       <td>5</td>
       <td>20</td>
@@ -76,7 +78,7 @@ const TableData = () => {
             <div className="rowArrowIcon"></div>
         </div>
     </td>
-      <td>UI/UX Design Along With Responsive Design For The Top Five Most</td>
+      <td><p>UI/UX Design Along With Responsive Design For The Top Five Most</p></td>
       <td><span class="textMandatory">Mandatory</span></td>
       <td>5</td>
       <td>5000</td>
@@ -96,7 +98,7 @@ const TableData = () => {
             <div className="rowArrowIcon"></div>
         </div>
     </td>
-      <td>Fronted Development in Either, Fluter or Android </td>
+      <td><p>Fronted Development in Either, Fluter or Android</p></td>
       <td><span class="textMandatory">Mandatory</span></td>
       <td>5</td>
       <td>5000</td>
@@ -116,7 +118,7 @@ const TableData = () => {
             <div className="rowArrowIcon"></div>
         </div>
       </td>
-      <td>Research & Strategy</td>
+      <td><p>Research & Strategy</p></td>
       <td><span class="textAdditional">Additional</span></td>
       <td>5</td>
       <td>5000</td>
@@ -129,16 +131,16 @@ const TableData = () => {
       <td>$15,000</td>
     </tr>
 
-    <tr style={{borderTop:"none", borderBottom:"none"}}>
-        <td colSpan="10" style={{lineHeight:"normal", padding:"0"}}>
+    <tr style={{borderTop:"none", boxShadow:"none", borderBottom:"1px solid #dedede"}}>
+        <td colSpan="10" style={{lineHeight:"normal", padding:"0", color:"#dedede"}}>
         <div className="addItemRow">
                <div className='plusIcon'></div> Add Item
             </div>
         </td>
     </tr>
 
-    <tr>
-        <td colSpan="10">
+    <tr style={{background:"none!important", boxShadow:"none", border:"none!important"}}>
+        <td colSpan="10" style={{color:"#dedede"}}>
         <div style={{margin:"250px 0 0 0"}}>
             </div>
         </td>
@@ -152,7 +154,7 @@ const TableData = () => {
             <div className="rowArrowIcon"></div>
         </div>
       </td>
-      <td>GST Tax</td>
+      <td><p>GST Tax</p></td>
       <td><span class="textMandatory">Mandatory</span></td>
       <td></td>
       <td></td>

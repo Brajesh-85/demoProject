@@ -5,7 +5,7 @@ const BasePrice = () => {
             <>
             
                 <div className="basePriceParent">
-                <div className="mt-5 pt-3"></div>
+                <div className="pt-2"></div>
                 <div className="clearfix"></div>
                         
                     <div className="row m-0">

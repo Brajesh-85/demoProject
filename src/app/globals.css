@@ -1,6 +1,6 @@
 
 body {
-	background: linear-gradient(-45deg, #fff4e6, #f8fcff, #ffebf6, #23d5ab);
+	background: linear-gradient(-45deg, #fae6cc, #d9ebf9, #ffebf6, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -39,6 +39,42 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+  }
+  
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
+
+@keyframes toggleOnRadio {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  
+  100% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
 
 
 .leftMenuBg {
@@ -344,17 +380,20 @@ transition: 1.5s all ease 0s;
 .breadcrumb {
   font-family: 'CabinetGrotesk-Regular';
   font-size:15px!important;
+  transition: 1.5s all ease 0s;
   
 }
 .breadcrumb a {
   color:#9A999F;
   text-decoration: none;
+  transition: 1.5s all ease 0s;
 }
 .breadcrumb-item+.breadcrumb-item::before {
   color:#9A999F!important;
 }
 .breadcrumb a:hover {
   color:#fff;
+  transition: 1.5s all ease 0s;
 }
 
 
@@ -370,10 +409,11 @@ transition: 1.5s all ease 0s;
   text-decoration:none;
   font-size:16px;
   margin:0 20px 0 0;
-  
+  transition: 1.5s all ease 0s;
 }
 .previewCTA:hover {
   color:#fff;
+  transition: 1.5s all ease 0s;
 }
 
 .nextCTA {
@@ -410,19 +450,39 @@ table tbody td {
   color:#67676f;
   font-size:14px;
   line-height:30px;
+  border-top:none!important;
+  border-bottom:none!important;
+  box-shadow: none!important;
 }
 table tbody tr {
   border-top:2px solid #dedede;
   border-bottom:2px solid #dedede;
-  transition: 0.5s all ease 0s;
-  background: transparent!important;
+  transition: 1s all ease 0s;
+  background:none!important;
 }
 
 table tbody tr:hover {
-  border-bottom:2px solid #bfbab8;
-  border-top:2px solid #bfbab8;
   background:#fff!important;
-  transition: 0.5s all ease 0s;
+  transition:1s all ease 0s;
+  box-shadow:0px 0px 0px 1.5px #dedede inset;
+}
+
+table tbody td p {
+  color:#67676f;
+  font-size:14px;
+ margin:0;
+ display: block;
+ padding:0 10px 0 10px;
+ transition:1s all ease 0s;
+}
+table tbody td p:hover {
+  background:#f2f2f3;
+  border-radius:4px;
+  border:1px solid #e6e6e8;
+  color:#1c1b29;
+  border:none;
+  box-shadow: 0px 0px 0px 1px #d9d9d9 inset;
+  transition:1s all ease 0s;
 }
 
 .tableRowIconsParent {
@@ -620,15 +680,18 @@ input[type='checkbox']{
   position: relative;
   left:10px;
   top:-2px;
-  
+  transition: 0.5s all ease 0s;
+  opacity:0.5;
 }
 input[type='checkbox']:checked{
   width: 10px;
   height: 10px;
   border-radius:100%;
-  background:#020110;
-  transition: 1.5s all ease 0s;
- 
+  background:#141321;
+  transition: 0.5s all ease 0s; 
+  box-shadow: 0 0 0 1px inset #fff;
+  border: 1px solid #141321;
+  opacity:1;
 }
 
 .checkboxRound {
@@ -637,12 +700,14 @@ input[type='checkbox']:checked{
   background-color: white;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #676770;
+  border: 1px solid #88888f;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
-  cursor: pointer;
+  cursor: pointer; 
 }
+
+
 
 .addItemRow {
   display: flex;
@@ -705,7 +770,7 @@ input[type='checkbox']:checked{
   width:30px;
   height:30px;
   display: inline-block;
-  margin: 0 5px 0 25px;
+  margin: 0 5px 0 15px;
   transform: scale(0.5);
   position: relative;
   top:10px;
@@ -713,4 +778,5 @@ input[type='checkbox']:checked{
 .basePriceParent .totalPrice {
   font-size:15px;
   float: right;
+  font-family:'Inter-Regular';
 }
