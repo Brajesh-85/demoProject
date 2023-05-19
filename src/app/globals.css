@@ -679,7 +679,7 @@ input[type='checkbox']{
   border-radius:100%;
   position: relative;
   left:10px;
-  top:-2px;
+  top:-10px;
   transition: 0.5s all ease 0s;
   opacity:0.5;
 }
@@ -705,6 +705,7 @@ input[type='checkbox']:checked{
   -webkit-appearance: none;
   outline: none;
   cursor: pointer; 
+  margin:17px 0 0 0;
 }
 
 
