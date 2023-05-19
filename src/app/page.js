@@ -9,14 +9,10 @@ export default function Home() {
   return (
     <div className="container-fluid p-0">
        <div class="row flex-nowrap p-0 m-0">
-        
       <SideBarMenu/>
       <div class="col p-0">
             <TopBreadCrumbBar/>
             <TableData/>
-            {/* <div className="addItemRow">
-               <div className='plusIcon'></div> Add Item
-            </div> */}
             <BasePriceTable/>
         </div> 
       </div>

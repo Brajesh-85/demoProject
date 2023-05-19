@@ -684,8 +684,8 @@ input[type='checkbox']{
   opacity:0.5;
 }
 input[type='checkbox']:checked{
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius:100%;
   background:#141321;
   transition: 0.5s all ease 0s; 

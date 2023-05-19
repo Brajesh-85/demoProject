@@ -1,10 +1,8 @@
 import React from "react";
-import GSTTableData from '/components/GSTTable'
 
 const TableData = () => {
         return (
             <>
-
 <table class="table">
   <thead>
     <tr>
