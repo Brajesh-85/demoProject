@@ -37,8 +37,8 @@ const TableData = () => {
             </td>
             <td><p>Consultation</p></td>
             <td><span class="textMandatory">Mandatory</span></td>
-            <td>1</td>
-            <td>10,000</td>
+            <td><p>1</p></td>
+            <td><p>10,000</p></td>
             <td>20 D</td>
             <td>$1,500/Hour</td>
             <td>
@@ -59,8 +59,8 @@ const TableData = () => {
             </td>
             <td><p>Creating Brand Centric Design System</p></td>
             <td><span class="textRecommended">Recommended</span></td>
-            <td>5</td>
-            <td>20</td>
+            <td><p>5</p></td>
+            <td><p>20</p></td>
             <td>Mthly</td>
             <td>$1,500/month</td>
             <td> <label class="switch">
@@ -79,8 +79,8 @@ const TableData = () => {
             </td>
             <td><p>UI/UX Design Along With Responsive Design For The Top Five Most</p></td>
             <td><span class="textMandatory">Mandatory</span></td>
-            <td>5</td>
-            <td>5000</td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
             <td>15 W</td>
             <td>$1,500/page</td>
             <td> <label class="switch">
@@ -99,8 +99,8 @@ const TableData = () => {
             </td>
             <td><p>Fronted Development in Either, Fluter or Android</p></td>
             <td><span class="textMandatory">Mandatory</span></td>
-            <td>5</td>
-            <td>5000</td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
             <td>20 W</td>
             <td>$1,500/page</td>
             <td> <label class="switch">
@@ -119,8 +119,8 @@ const TableData = () => {
             </td>
             <td><p>Research & Strategy</p></td>
             <td><span class="textAdditional">Additional</span></td>
-            <td>5</td>
-            <td>5000</td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
             <td>4 M</td>
             <td>$1,500/project</td>
             <td> <label class="switch">
@@ -130,7 +130,7 @@ const TableData = () => {
             <td>$15,000</td>
           </tr>
           <tr style={{ borderTop: "none", boxShadow: "none", borderBottom: "1px solid #dedede" }}>
-            <td colSpan="10" style={{ lineHeight: "normal", padding: "0", color: "#dedede" }}>
+            <td colSpan="10" style={{ lineHeight: "normal", padding: "0", color: "#dedede", right:"0", padding:"0!important" }}>
               <AddItemsCTA />
             </td>
           </tr>
