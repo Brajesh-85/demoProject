@@ -13,13 +13,12 @@ export default function FormMethod() {
             .then((response) => {
                 console.log(response);
                 e.target.reset();
+                alert('Form has been submitted successfully!')
             })
             .catch(error => {
                 console.log(error);
             });
-            
     };
-
 
     return (
         <>
