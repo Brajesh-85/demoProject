@@ -14,20 +14,20 @@ console.log(employees)
     return (
         <>
             <h2>List of Students</h2>
-                {employees.map((item, index) => (
+                {/* {employees.map((item, index) => (
                     (
                         <>
                         <ul><li><Link href="" style={{textDecoration:"none"}} key={index}>{item.firstName} {item.lastName}</Link></li></ul>
                         </>
                     )
                 )
-            )}
-            {/* <ul>
+            )} */}
+            <ul>
                 <li><Link href="/studentlist/brajesh">Brajesh</Link></li>
                 <li><Link href="/studentlist/prerna">Prerna</Link></li>
                 <li><Link href="/studentlist/himangi">Himangi</Link></li>
                 <li><Link href="/studentlist/rudra">Rudra</Link></li>
-            </ul> */}
+            </ul>
         </>
     )
 }

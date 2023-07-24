@@ -18,7 +18,7 @@ const UpdateProductName = () => {
 
     }
 
-    useState(() => {
+    useEffect(() => {
         UsersList();
     }, [])
 
