@@ -49,12 +49,26 @@ const productListing = () => {
             method: "Get"
         })
         let respose = await url.json()
-        console.log(respose)
+        // console.log(respose)
         setPosts(respose.posts)
     }
+
     useEffect(() => {
         postsList()
     }, [])
+
+
+    function deleteCard(id) {
+        // alert(id);
+        fetch(`https://dummyjson.com/posts/${id}`, {
+            method: "DELETE"
+        }).then((result) => {
+             result.json()
+             //postsList()
+            alert("card has been deleted successfully!")
+        })
+    }
+
 
     return (
         <>
@@ -75,13 +89,17 @@ const productListing = () => {
                                                 )
                                             })
                                             }
+                                            <li className="d-flex justify-content-end w-100">
+                                                <h6 className="card-title float-right idCircle">{item.id}</h6>
+                                            </li>
                                         </ul>
+
                                     </h5>
                                     {/* <img src={item.thumbnail} style={{ height: "250px" }} className="card-img-top" alt="..." /> */}
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
                                         <p className="card-texuserIdt">{item.body.length > 20 ? item.body.substr(0, 80) + '...' : 'item.body'}</p>
-                                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                                        <a href={null} className="btn btn-primary" onClick={() => deleteCard(item.id)}>delete</a>
                                     </div>
                                 </div>
                             </div>
