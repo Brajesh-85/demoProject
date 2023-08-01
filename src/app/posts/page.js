@@ -2,45 +2,6 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 
-// const ProductList = () => {
-//     const [product, setProduct] = useState([]);
-//     const productListing = async () => {
-//         let url = await fetch('https://dummyjson.com/products')
-//         //  console.log(url.json());
-//         let data = await url.json();
-//         setProduct(data?.products)
-//     }
-
-//     useEffect(() => {
-//         productListing();
-//     }, [])
-
-//     return (
-//         <>
-//             <div className="container">
-//                 <div className="row">
-//                     <h3 className="px-4 text-center py-3">showing the products list</h3>
-//                     {product.map((item, index) => (
-//                         <div className="col-md-4 col-12 mb-4 d-flex justify-content-between align-items-top" key={index}>
-//                             <div className="card w-100">
-//                                 <img src={item.thumbnail} style={{ height: "250px" }} className="card-img-top" alt="..." />
-//                                 <div className="card-body">
-//                                     <h5 className="card-title">{item.title}</h5>
-//                                     <p className="card-text">{item.description.length > 20 ? item.description.substr(0, 40) + '...' : 'item.description'}</p>
-//                                     <a href="#" className="btn btn-primary">Go somewhere</a>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     ))
-//                     }
-//                 </div>
-
-//             </div>
-//         </>
-//     )
-// }
-// export default ProductList;
-
 const productListing = () => {
     const [posts, setPosts] = useState([])
 
@@ -57,14 +18,13 @@ const productListing = () => {
         postsList()
     }, [])
 
-
     function deleteCard(id) {
         // alert(id);
         fetch(`https://dummyjson.com/posts/${id}`, {
             method: "DELETE"
         }).then((result) => {
-             result.json()
-             //postsList()
+            result.json()
+           // postsList() to prevent the page refresh
             alert("card has been deleted successfully!")
         })
     }
@@ -99,13 +59,21 @@ const productListing = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}</h5>
                                         <p className="card-texuserIdt">{item.body.length > 20 ? item.body.substr(0, 80) + '...' : 'item.body'}</p>
-                                        <a href={null} className="btn btn-primary" onClick={() => deleteCard(item.id)}>delete</a>
+
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <a href={null} className="btn btn-primary" onClick={() => deleteCard(item.id)}>delete</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         )
                     })
                     }
+                    {/* <div className="container mt-4">
+                        <div className="d-flex justify-content-end">
+                        <a href={null} className="btn btn-primary float-right" onClick={() => addCard()}>Add</a>
+                        </div>
+                    </div> */}
                 </div>
 
             </div>
