@@ -12,18 +12,14 @@ const UserList = () => {
         setUserName(userResult)
     }
 
-const deleteCard = (id) => {
-    fetch(`userResult${id}`,{
-        method : "DELETE"
-    }).then(response => {
-        response.json();
-         alert('Card has been deleted!')
-    })
-   
-    
-}
-
-
+    const deleteCard = (id) => {
+        fetch(`userResult${id}`, {
+            method: "DELETE"
+        }).then(response => {
+            response.json();
+            alert('Card has been deleted!')
+        })
+    }
 
     useEffect(() => {
         ShowAllUsers()
@@ -57,8 +53,6 @@ const deleteCard = (id) => {
 
                 </div>
             </div>
-
-
         </>
     )
 }

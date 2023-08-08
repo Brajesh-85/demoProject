@@ -8,14 +8,13 @@ const UpdateProductName = () => {
     const UsersList = async () => {
         const URL = await fetch('https://dummyjson.com/users');
         let data = await URL.json();
-       // console.log(data);
-        if (data.users) {
-            setUserList(data.users)
+        // console.log(data);
+        if (data?.users) {
+            setUserList(data?.users)
         }
         else {
             setUserList("Data not found!")
         }
-
     }
 
     useEffect(() => {
@@ -33,37 +32,50 @@ const UpdateProductName = () => {
             })
         }).then((resp) => {
             resp.json()
-           // console.log(resp)
-            alert("Card has been updated successfully!")
+            // console.log(resp)
+            alert("Project with ID " + id + " is added successfully")
         })
     }
 
-function addInfo(id){
-    fetch(`https://dummyjson.com/users/${id}`,{
-        method : "POST",
-        headers : {'Content-Type' : 'application/json'},
-        body : JSON.stringify({
-            bike : "Platina"
+    function deleteInfo(id) {
+        fetch(`https://dummyjson.com/users/${id}`, {
+            method: "DELETE",
+            headers: { 'Content-Type': 'application/json' },
+        }).then((response) => {
+            response.json();
+            //console.log(response)
+            alert("Project with ID " + id + " is deleted successfully")
         })
-    }).then ((response) => {
-        response.json();
-        console.log(response)
-    })
-}    
+    }
 
-
-
-
+    function addedNewProduct() {
+        fetch(`https://dummyjson.com/products/add`, {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                title: "New Added Title"
+            })
+        }).then((response) => {
+            response.json();
+            // console.log(response)
+            alert("New card has been created successfully!")
+        })
+    }
 
     return (
         <>
             <div className="container py-4">
                 <h3 className="text-center">Users Information</h3>
                 <div className="row">
+                    <div className="col-12 mb-3">
+                        <a href={null} className="btn btn-primary float-right mx-3" onClick={() => addedNewProduct()}>Add Card +</a>
+                    </div>
+                </div>
+                <div className="row">
                     {userlist.map((item, index) => {
                         return (
-                            <div className="col-md-4 col-12">
-                                <div className="card mb-4" key={index}>
+                            <div className="col-md-4 col-12" key={index}>
+                                <div className="card mb-4">
                                     <div className="card-body">
                                         <div className="d-flex justify-content-center align-items-top"> <img src={item.image} className="w-25" alt="user" /></div>
                                         <h5 className="card-title">{item.firstName} {item.lastName}</h5>
@@ -88,13 +100,12 @@ function addInfo(id){
                                         <h6 className="card-subtitle mb-2 text-body-secondary">card Type : {item.bank.cardType}</h6>
                                         <h6 className="card-subtitle mb-2 text-body-secondary">Currency : {item.bank.currency}</h6>
                                         <a href={null} className="btn btn-primary float-right" onClick={() => updateCard(item.id)}>Update</a>
-                                        <a href={null} className="btn btn-primary float-right mx-3" onClick={() => addInfo(item.id)}>Add Info</a>
+                                        <a href={null} className="btn btn-primary float-right mx-3" onClick={() => deleteInfo(item.id)}>Delete Card</a>
                                     </div>
                                 </div>
                             </div>
                         )
                     })
-
                     }
                 </div>
             </div>
