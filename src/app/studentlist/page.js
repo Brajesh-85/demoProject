@@ -29,7 +29,7 @@ console.log(employees);
     return (
         <>
             <h2>List of Students</h2>
-            <ul>
+            {/* <ul>
                 {employees.map((item, index) => (
                     (
                         <>
@@ -40,13 +40,13 @@ console.log(employees);
                     )
                 )
             )}
-            </ul>
-            {/* <ul>
-                <li><Link href="/studentlist/brajesh">Brajesh</Link></li>
-                <li><Link href="/studentlist/prerna">Prerna</Link></li>
-                <li><Link href="/studentlist/himangi">Himangi</Link></li>
-                <li><Link href="/studentlist/rudra">Rudra</Link></li>
             </ul> */}
+            <ul>
+                <li><Link href="/studentlist/userone">User one</Link></li>
+                <li><Link href="/studentlist/usertwo">User two</Link></li>
+                <li><Link href="/studentlist/userthree">User three</Link></li>
+                <li><Link href="/studentlist/userfour">User four</Link></li>
+            </ul>
         </>
     )
 }

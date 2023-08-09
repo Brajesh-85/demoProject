@@ -836,3 +836,7 @@ input[type='checkbox']:checked {
   background: #020110!important;
   color: white!important;
 }
+.images2{
+  width: 100%;
+  height: auto;
+}
