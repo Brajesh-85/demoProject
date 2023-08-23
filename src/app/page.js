@@ -2,11 +2,20 @@
 import styles from './page.module.css'
 import SideBarMenu from '/components/sideMenus'
 import TopBreadCrumbBar from '/components/topBreadCrumbBar'
-import TableData from '/components/tableData'
+//import TableData from '/components/tableData'
 import BasePriceTable from '/components/basePrice'
+import React,{Suspense, lazy } from 'react';
 import { useState, useEffect } from 'react'
 
+const TableData = React.lazy(() => {
+  return new Promise(resolve => setTimeout(resolve, 1000)).then(
+    () => import("/components/tableData")
+  );
+});
+
+
 export default function Home() {
+ 
   //console.log(process.env.SERVER_PASSWORD)
 
   //to update the state data/value
@@ -23,19 +32,24 @@ export default function Home() {
           process.env.NODE_ENV == "development" ? <h2>You are on Development</h2> : <h3>You are on Production</h3>
         } */}
 
-        {/* <SideBarMenu /> */}
-        {/* <div class="col p-0">
+        <SideBarMenu />
+        <div class="col p-0">
           <TopBreadCrumbBar />
-          <TableData />
+        <Suspense fallback={<h3>Please wait...</h3>}>
+            <TableData />
+            </Suspense>
+         
+          {/* <TableData /> */}
           <BasePriceTable />
-        </div> */}
 
-        <div className='container'>
+        </div>
+
+        {/* <div className='container'>
           <UserName Fname="User - Brajesh" Lname="Kumar" />
           <UserName location="Location - Uttarakhand" /><br />
           <h5>To update/change the state value {name}</h5>
           <button onClick={() => ChangeState()}>Click here</button>
-        </div>
+        </div> */}
 
       </div>
     </div>

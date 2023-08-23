@@ -129,6 +129,447 @@ const TableData = () => {
             </label></td>
             <td>$15,000</td>
           </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          <tr>
+            <td><input type='checkbox' className="checkboxRound" value='cookies' /></td>
+            <td>
+              <div className="tableTdIconsParent">
+                <div className="dotsIcon"></div>
+                <div className="rowArrowIcon"></div>
+              </div>
+            </td>
+            <td><p>Research & Strategy</p></td>
+            <td><span class="textAdditional">Additional</span></td>
+            <td><p>5</p></td>
+            <td><p>5000</p></td>
+            <td>4 M</td>
+            <td>$1,500/project</td>
+            <td> <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label></td>
+            <td>$15,000</td>
+          </tr>
+          
           <tr style={{ borderTop: "none", boxShadow: "none", borderBottom: "1px solid #dedede" }}>
             <td colSpan="10" style={{ lineHeight: "normal", padding: "0", color: "#dedede", right:"0", padding:"0!important" }}>
               <AddItemsCTA />

@@ -1,12 +1,8 @@
+//'use client'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Home page title',
-  description: 'Home page Description',
-}
 
 export default function RootLayout({ children }) {
   return (
@@ -24,4 +20,8 @@ export default function RootLayout({ children }) {
     </html>
 
   )
+}
+export const metadata = {
+  title: 'Home page title',
+  description: 'Home page Description',
 }
