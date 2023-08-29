@@ -86,7 +86,3 @@ const ProductList = () => {
 }
 export default ProductList;
 
-// export const metadata = {
-//     title: 'Metainfo page title',
-//     description: 'Metainfo page description',
-// }
