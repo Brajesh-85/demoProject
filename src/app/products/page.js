@@ -52,7 +52,7 @@ const ProductList = () => {
                         <h3 className="px-1 text-left py-3">Products List</h3>
                     </div>
                     <div className="col-md-6 col-3 d-flex align-items-center justify-content-end">
-                        <a href="#" className="btn btn-primary float-end" onClick={() => addInfo()}>Add</a>
+                        <Link className="btn btn-primary float-end" onClick={() => addInfo()}>Add</Link>
                     </div>
                     {loading ? <LoadingCard /> :
                         <>
