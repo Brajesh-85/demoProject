@@ -84,7 +84,7 @@ export default function UpdateProductName() {
                                                 src={item.image}
                                                 className="w-50"
                                                 effect="blur"
-                        
+
                                             />
                                         </div>
                                         <h5 className="card-title">{item.firstName} {item.lastName}</h5>
