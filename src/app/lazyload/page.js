@@ -6,7 +6,6 @@ const TableData = React.lazy(() => {
     );
   });
 
-
 export default function LazyLoadComp() {
     return (
         <>  

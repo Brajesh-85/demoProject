@@ -35,6 +35,7 @@ const ProductList = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 name: "Brajesh",
+                lastName: "Kumar"
             })
         }).then((resp) => {
             resp.json()
@@ -51,6 +52,7 @@ const ProductList = () => {
                     <div className="col-md-6 col-9 mb-2">
                         <h3 className="px-1 text-left py-3">Products List</h3>
                     </div>
+
                     <div className="col-md-6 col-3 d-flex align-items-center justify-content-end">
                         <Link href="#" className="btn btn-primary float-end" onClick={() => addInfo()}>Add</Link>
                     </div>
