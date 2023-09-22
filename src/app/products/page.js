@@ -39,8 +39,8 @@ const ProductList = () => {
             })
         }).then((resp) => {
             resp.json()
-            console.log(resp)
-            alert('New id has been created successfully!')
+           // console.log(resp)
+            alert('New record has been created successfully!')
         })
     }
 
@@ -66,7 +66,7 @@ const ProductList = () => {
                                             src={item.thumbnail}
                                             className="card-img-top"
                                             effect="blur"
-                                            style={{ height: "250px" }}
+                                            style={{ height: "250px", borderRadius:"20px", padding:"10px 10px 0 10px", border:"1px solid #fcfcfc"}}
                                         />
                                         <div className="card-body">
                                             <h5 className="card-title">{item.title}</h5>

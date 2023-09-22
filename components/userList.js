@@ -33,7 +33,7 @@ export default function UpdateProductName() {
             })
         }).then((resp) => {
             resp.json()
-            // console.log(resp)
+            //console.log(resp)
             alert("Project with ID " + id + " is added successfully")
         })
     }

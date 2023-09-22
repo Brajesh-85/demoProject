@@ -11,7 +11,7 @@ const UsersList = () => {
                 <InfiniteScroll
                     dataLength={UserList.length}
                     hasMore={true}
-                    loader={<h4>Loading...</h4>}
+                    //loader={<h4>Loading...</h4>}
                     >
                     <UserList />
                 </InfiniteScroll>

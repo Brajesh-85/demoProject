@@ -33,7 +33,7 @@ export default function Home() {
         } */}
 
         <SideBarMenu />
-        <div class="col p-0">
+        <div className="col p-0">
           <TopBreadCrumbBar />
         <Suspense fallback={<h3>Please wait...</h3>}>
             <TableData />
