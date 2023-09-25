@@ -3,7 +3,6 @@ import React, { Suspense, lazy } from "react"
 import UserList from '../../../components/userList'
 import InfiniteScroll from "react-infinite-scroll-component"
 
-
 const UsersList = () => {
     return (
         <>
