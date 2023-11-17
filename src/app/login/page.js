@@ -11,19 +11,30 @@ const LoginPage = () => {
     const [name, setName] = useState(" ");
     const [password, setPassword] = useState(" ")
 
-const customToast = () =>
-    toast.success("Login Successful", {
-        position: "top-center",
-        autoClose: 5000,
-    })
+    const customToast = () =>
+        toast.success("Login Successful", {
+            position: "top-center",
+            autoClose: 5000,
+        })
 
     const handleSubmit = () => {
-        //e.prevantDefault();
+        // e.prevantDefault();
+
+        fetch('https://dummyjson.com/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: 'kminchelle',
+                password: '0lelplR',
+                // expiresInMins: 60, // optional
+            })
+        })
+        .then(res => res.json())
+        toast.success("Login Successful", {
+            position: "top-center",
+            autoClose: 1000,
+        })
     }
-
-
-
-
 
     return (
         <>
@@ -43,7 +54,7 @@ const customToast = () =>
                             <input type="password" name="password" onChange={(e) => setPassword(e.target.value)} className="form-control" />
                         </div>
                         <div className="col-md-6 col-12 mt-4 text-left">
-                            <button type="submit" onClick={customToast} className="btn btn-primary">Submit</button>
+                            <button type="submit" onClick={handleSubmit} className="btn btn-primary">Submit</button>
                             <ToastContainer />
                         </div>
                     </div>
